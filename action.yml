@@ -1,0 +1,16 @@
+name: "Publish to GHCR"
+
+runs:
+  using: "composite"
+  steps:
+      - name: Checking out!
+        uses: actions/checkout@v31
+
+      - name: Action step
+        run: |
+            echo "This is after the package action step"
+        shell: bash
+      
+   
+        
+      
